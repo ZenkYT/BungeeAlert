@@ -1,0 +1,7 @@
+name: BungeeAlert
+version: 1.0.0
+main: dima.main.main
+author: Zenk_YT
+commands:
+  alert:
+    
