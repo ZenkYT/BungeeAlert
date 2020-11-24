@@ -19,7 +19,7 @@ public class AlertCommand extends Command{
 				for(String msg : args) {
 					alert = (alert + msg.replace("&", "\u00a7") + " ");
 				}
-				ProxyServer.getInstance().broadcast("[" + ChatColor.RED + "ALERT" + ChatColor.WHITE + "] " + sender.getName() + ": " + alert);
+				ProxyServer.getInstance().broadcast(ChatColor.DARK_GRAY + "[" + ChatColor.RED + "ALERT" + ChatColor.DARK_GRAY + "] " + ChatColor.WHITE + sender.getName() + ChatColor.DARK_GRAY + " >> " + ChatColor.WHITE + alert);
 			}else {
 				sender.sendMessage(ChatColor.RED + "Usage: /alert <Message>");
 			}
